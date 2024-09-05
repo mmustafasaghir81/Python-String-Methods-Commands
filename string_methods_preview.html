@@ -1,0 +1,443 @@
+
+<html>
+<head>
+    <title>Python String Methods & Commands Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.6;
+            background: url('static/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .method-section {
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        code {
+            display: block;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .output {
+            color: green;
+        }
+        footer {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python String Methods & Commands Preview</h1>
+
+        <div class="method-section">
+            <h2>Method 1: lower</h2>
+            <p><strong>Description:</strong> Converts all characters to lowercase.</p>
+            <pre><code>text = 'HELLO'
+print(text.lower())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: HELLO</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 2: capitalize</h2>
+            <p><strong>Description:</strong> Converts the first character to uppercase.</p>
+            <pre><code>text = 'hello world'
+print(text.capitalize())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 3: casefold</h2>
+            <p><strong>Description:</strong> Returns a casefolded copy of the string.</p>
+            <pre><code>text = 'HELLO'
+print(text.casefold())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: HELLO</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 4: center</h2>
+            <p><strong>Description:</strong> Centers the string with a specified character.</p>
+            <pre><code>text = 'hello'
+print(text.center(20, '*'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 5: encode</h2>
+            <p><strong>Description:</strong> Encodes the string into bytes.</p>
+            <pre><code>text = 'hello'
+print(text.encode('utf-8'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 6: expandtabs</h2>
+            <p><strong>Description:</strong> Expands tabs in the string into spaces.</p>
+            <pre><code>text = 'hello\thello'
+print(text.expandtabs(4))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello	hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 7: find</h2>
+            <p><strong>Description:</strong> Finds the first occurrence of a substring.</p>
+            <pre><code>text = 'hello world'
+print(text.find('world'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 8: format</h2>
+            <p><strong>Description:</strong> Formats the string with placeholders.</p>
+            <pre><code>text = 'Hello {name}'
+print(text.format(name='world'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: Hello {name}</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 9: isalnum</h2>
+            <p><strong>Description:</strong> Checks if all characters are alphanumeric.</p>
+            <pre><code>text = 'hello123'
+print(text.isalnum())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello123</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 10: isalpha</h2>
+            <p><strong>Description:</strong> Checks if all characters are alphabetic.</p>
+            <pre><code>text = 'hello'
+print(text.isalpha())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 11: isascii</h2>
+            <p><strong>Description:</strong> Checks if all characters in the string are ASCII.</p>
+            <pre><code>text = 'hello'
+print(text.isascii())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 12: isdecimal</h2>
+            <p><strong>Description:</strong> Checks if all characters are decimals.</p>
+            <pre><code>text = '12345'
+print(text.isdecimal())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: 12345</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 13: islower</h2>
+            <p><strong>Description:</strong> Checks if all characters are lowercase.</p>
+            <pre><code>text = 'hello'
+print(text.islower())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 14: isnumeric</h2>
+            <p><strong>Description:</strong> Checks if all characters are numeric.</p>
+            <pre><code>text = '12345'
+print(text.isnumeric())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: 12345</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 15: isupper</h2>
+            <p><strong>Description:</strong> Checks if all characters are uppercase.</p>
+            <pre><code>text = 'HELLO'
+print(text.isupper())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: HELLO</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 16: ljust</h2>
+            <p><strong>Description:</strong> Left-justifies the string.</p>
+            <pre><code>text = 'hello'
+print(text.ljust(10, '-'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 17: lstrip</h2>
+            <p><strong>Description:</strong> Removes leading whitespace.</p>
+            <pre><code>text = '   hello'
+print(text.lstrip())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output:    hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 18: partition</h2>
+            <p><strong>Description:</strong> Splits the string into three parts.</p>
+            <pre><code>text = 'hello world'
+print(text.partition(' '))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 19: rfind</h2>
+            <p><strong>Description:</strong> Finds the last occurrence of a substring.</p>
+            <pre><code>text = 'hello world hello'
+print(text.rfind('hello'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 20: rsplit</h2>
+            <p><strong>Description:</strong> Splits the string from the right.</p>
+            <pre><code>text = 'hello world hello'
+print(text.rsplit(' ', 1))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 21: rstrip</h2>
+            <p><strong>Description:</strong> Removes trailing whitespace.</p>
+            <pre><code>text = 'hello   '
+print(text.rstrip())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello   </code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 22: split</h2>
+            <p><strong>Description:</strong> Splits the string.</p>
+            <pre><code>text = 'hello world'
+print(text.split(' '))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 23: swapcase</h2>
+            <p><strong>Description:</strong> Swaps uppercase to lowercase and vice versa.</p>
+            <pre><code>text = 'Hello World'
+print(text.swapcase())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: Hello World</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 24: title</h2>
+            <p><strong>Description:</strong> Converts to title case.</p>
+            <pre><code>text = 'hello world'
+print(text.title())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 25: upper</h2>
+            <p><strong>Description:</strong> Converts all characters to uppercase.</p>
+            <pre><code>text = 'hello'
+print(text.upper())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 26: zfill</h2>
+            <p><strong>Description:</strong> Pads the string with zeros.</p>
+            <pre><code>text = '42'
+print(text.zfill(5))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: 42</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 27: strip</h2>
+            <p><strong>Description:</strong> Removes both leading and trailing whitespace.</p>
+            <pre><code>text = '   hello   '
+print(text.strip())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output:    hello   </code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 28: replace</h2>
+            <p><strong>Description:</strong> Replaces a substring with another substring.</p>
+            <pre><code>text = 'hello world'
+print(text.replace('world', 'Python'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 29: count</h2>
+            <p><strong>Description:</strong> Counts occurrences of a substring.</p>
+            <pre><code>text = 'hello world'
+print(text.count('o'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 30: startswith</h2>
+            <p><strong>Description:</strong> Checks if the string starts with a specified prefix.</p>
+            <pre><code>text = 'hello world'
+print(text.startswith('hello'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 31: endswith</h2>
+            <p><strong>Description:</strong> Checks if the string ends with a specified suffix.</p>
+            <pre><code>text = 'hello world'
+print(text.endswith('world'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 32: index</h2>
+            <p><strong>Description:</strong> Returns the index of the first occurrence of a substring.</p>
+            <pre><code>text = 'hello world'
+print(text.index('world'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 33: rindex</h2>
+            <p><strong>Description:</strong> Returns the index of the last occurrence of a substring.</p>
+            <pre><code>text = 'hello world world'
+print(text.rindex('world'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello world world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 34: join</h2>
+            <p><strong>Description:</strong> Joins elements of an iterable with the string as a separator.</p>
+            <pre><code>text = '-'
+print(text.join(['hello', 'world']))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: -</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 35: splitlines</h2>
+            <p><strong>Description:</strong> Splits the string at line breaks.</p>
+            <pre><code>text = 'hello\nworld'
+print(text.splitlines())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: hello
+world</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 36: maketrans</h2>
+            <p><strong>Description:</strong> Creates a mapping table for translations.</p>
+            <pre><code>table = str.maketrans('abc', '123')
+text = 'abc'
+print(text.translate(table))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: abc</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 37: translate</h2>
+            <p><strong>Description:</strong> Translates the string using a mapping table.</p>
+            <pre><code>table = str.maketrans('abc', '123')
+text = 'abc'
+print(text.translate(table))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: abc</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 38: removeprefix</h2>
+            <p><strong>Description:</strong> Removes a specified prefix.</p>
+            <pre><code>text = 'unhappy'
+print(text.removeprefix('un'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: unhappy</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 39: removesuffix</h2>
+            <p><strong>Description:</strong> Removes a specified suffix.</p>
+            <pre><code>text = 'walking'
+print(text.removesuffix('ing'))</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: walking</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 40: isidentifier</h2>
+            <p><strong>Description:</strong> Checks if the string is a valid identifier.</p>
+            <pre><code>text = 'variable_name'
+print(text.isidentifier())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: variable_name</code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 41: isspace</h2>
+            <p><strong>Description:</strong> Checks if all characters are whitespace.</p>
+            <pre><code>text = '   '
+print(text.isspace())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output:    </code></pre>
+        </div>
+        
+        <div class="method-section">
+            <h2>Method 42: istitle</h2>
+            <p><strong>Description:</strong> Checks if the string follows title case.</p>
+            <pre><code>text = 'Hello World'
+print(text.istitle())</code></pre>
+            <p><strong>Output:</strong></p>
+            <pre class="output"><code># Output: Hello World</code></pre>
+        </div>
+        
+    <footer>
+        2024 Muhammad Mustafa Saghir. All rights reserved.
+    </footer>
+</body>
+</html>
