@@ -1,0 +1,83 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    border: 1px solid #00aaff;
+}
+
+h1 {
+    color: #00aaff;
+    margin-bottom: 30px;
+}
+
+/* Code block styling */
+.code-block {
+    text-align: left;
+}
+
+pre {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow-x: auto;
+    border: 1px solid #555;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+}
+
+/* Styling the output */
+.output {
+    background-color: #222;
+    color: #98c379;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+}
+
+/* Gap between code blocks */
+.gap {
+    height: 20px;
+}
+
+/* Button styling */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+a.btn:hover {
+    background-color: #0077cc;
+}
+
+/* Pagination styling */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
