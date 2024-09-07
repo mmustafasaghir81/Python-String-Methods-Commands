@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods Output</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container preview">
+        <h1>String Methods Output</h1>
+        
+        <div class="code-block">
+            {% for method in methods %}
+                <pre><code>{{ loop.index + (page - 1) * 10 }}. text = "Welcome to PIACI Institute"
+print(text.{{ method.method }})</code></pre>
+                <div class="output">
+                    Output: {{ method.output }}
+                </div>
+                <div class="gap"></div>
+            {% endfor %}
+        </div>
+
+        <div class="pagination">
+            {% if page > 1 %}
+                <a href="/preview?page={{ page - 1 }}" class="btn">Previous</a>
+            {% endif %}
+            
+            {% if page < total_pages %}
+                <a href="/preview?page={{ page + 1 }}" class="btn">Next</a>
+            {% endif %}
+        </div>
+
+        <a href="/" class="btn">Back</a>
+    </div>
+
+    <footer>
+        <p>2024 Muhammad Mustafa Saghir. All rights reserved.</p>
+    </footer>
+</body>
+</html>
